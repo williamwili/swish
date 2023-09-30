@@ -28,8 +28,11 @@ nav{
     text-align: center;
     padding: 10px;
   }
-
-  .nav-menu a {
+  .nav-menu{
+    display: flex;
+    justify-content: center;
+  }
+  .nav-menu a{
     color: white;
     margin: 0 10px;
     text-decoration: none;
@@ -44,11 +47,8 @@ nav{
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.24);
   }
 
-  .nav-icon a{
-    justify-content: right;
-  }
-  .nav-icon i{
-    align-items: right;
+  .nav-menu .nav-icon{
+    align-self: end;
     color: white;
     font-size: 25px;
     font-weight: 400;
@@ -89,6 +89,7 @@ section{
     color: white;
   }
   
+  /*Product*/
   .maintext-product{
     text-align: center;
     font-size: 28px;
@@ -114,11 +115,11 @@ section{
   .row img:hover{
     transform: scale(1.1);
     background-size: cover;
-    -webkit-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .product-name h4{
     font-weight: 400;
@@ -140,3 +141,13 @@ section{
     padding: 10px 20px;
     transition: all.42s ease;
   }
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: large;
+}
