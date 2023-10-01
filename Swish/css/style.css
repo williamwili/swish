@@ -242,6 +242,7 @@ footer{
 /* Contact */
 .contact-us{
   margin: 0px;
+
 }
 .container-con{
   width:100%;
@@ -341,9 +342,7 @@ padding-top: 5px;
       margin-top:120px;
     }
 
-    .contact-us{
-      margin-top:120px;
-    }
+
 }
 @media(max-width:630px){
     .main-text h1{
