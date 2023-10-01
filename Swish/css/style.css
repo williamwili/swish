@@ -23,6 +23,7 @@ header{
     z-index: 1000;
     background-color: #191D88;
     text-align: center;
+
 }
 
 nav{
@@ -30,6 +31,7 @@ nav{
     color: white;
     text-align: center;
     padding: 10px;
+
   }
   .nav-menu{
     display: flex;
@@ -151,9 +153,79 @@ section{
     color: white;
   }
 
-  .container-siderbar{
-    
+
+  .container{
+    margin-top:20px;
   }
+
+  .product-container {
+    display:flex;
+    justify-content:space-evenly;
+    gap:10rem;
+   
+  }
+
+  /* Styling Dropdown */
+  select {
+
+    /* styling */
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  select.minimal {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.minimal:focus {
+    background-image:
+      linear-gradient(45deg, green 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, green 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+  
+
+  /* Checkbox */
+
+
+
 
 footer{
   background-color: black;
@@ -165,11 +237,108 @@ footer{
   font-size: large;
 }
 
+
+
+/* Contact */
+.contact-us{
+  margin: 0px;
+}
+.container-con{
+  width:100%;
+  flex-direction: column;
+  margin:0px;
+  padding:0px 40px;
+}
+.contact-content p{
+  font-size: 18px;
+  margin-bottom: 20px;    
+}
+.contact-us{
+    margin: 0px;
+
+.contact-content button{
+    font-size: 16px;
+    padding: 8px 16px;
+}
+.contact-content h2{
+  font-size: 30px;
+  color: #1c00b5;
+  font-weight: 600;
+}
+}
+
+.cta-button{
+display: inline-block;
+background-color: #191D88;
+color: #fff;
+padding: 9px 19px;
+border-radius: 5px;
+font-size: 20px;
+border: none;
+cursor: pointer;
+transition: 0.3s ease;
+box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.cta-button-cancel{
+display: inline-block;
+background-color: #130a7d;
+color: #fff;
+padding: 9px 17px;
+border-radius: 5px;
+font-size: 20px;
+border: none;
+cursor: pointer;
+transition: 0.3s ease;
+box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+button:hover{
+background-color: #474cda;
+transform: scale(1.1);
+}
+.contact-content{
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+.container-con .contact-content{
+flex-basis: 45%;
+}
+input{
+width: 100%;
+border: none;
+border-bottom: 1px solid #ccc;
+outline: none;
+padding-bottom: 5px;
+}
+textarea{
+width: 100%;
+border: 1px solid #ccc;
+outline: none;
+padding: 10px;
+box-sizing: border-box;
+}
+label{
+margin-bottom: 6px;
+display: block;
+color: #191D88;
+}
+tr td:first-child{
+padding-right: 20px;
+}
+tr td{
+padding-top: 5px;
+}
+
+
 /*responsive CSS */
 @media(max-width:890px){
     header{
       padding: 20px 3%;
       transition: .4s;
+    }
+
+    .container{
+      margin-top:120px;
     }
 }
 @media(max-width:630px){
@@ -177,11 +346,15 @@ footer{
       padding: 50px;
       transition: .4s;
     }
+
     .main-btn{
       padding: 10px 20px;
       transition: .4s;
     }
+
+
 }
+
 
 @keyframes fadeInRight {
   0%{
@@ -201,5 +374,13 @@ footer{
   100%{
       opacity: 1;
       transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .heading h1{
+      font-size: 45px;
+      margin-top: 30px;
+
   }
 }

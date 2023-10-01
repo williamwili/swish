@@ -128,18 +128,24 @@ img{
     background:transparent;
     width:10rem;
     height:3rem;
-    transition: all .200s ease-in-out;
+    padding: 9px 17px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
 
 .product-size-button:hover{
-    background:rgb(199, 201, 200);
     font-size: 20px;
-    scale:105%;
     border:1px solid transparent;
     cursor:pointer;
+    background-color: #474cda;
+transform: scale(1.1);
 }
 
-// bikin buttonnya active
+
 
 
 .product-buy {
@@ -150,7 +156,7 @@ img{
 }
 
 .product-buy-items{
-    background:#191D88;
+    background-color: #130a7d;
     color:white;
     font-size:16.5px;
     width:10rem;
@@ -165,6 +171,7 @@ img{
     transition: all .200s ease-in-out;
     text-align:center;
     font-size:1.5em;
+    border:1px solid;
 }
 
 .more-product h1{
