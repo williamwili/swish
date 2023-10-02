@@ -243,7 +243,7 @@ footer{
 
 /* Contact */
 .contact-us{
-  margin: 0px;
+  margin-top: 20px;
 
 }
 .container-con{
@@ -255,19 +255,6 @@ footer{
 .contact-content p{
   font-size: 18px;
   margin-bottom: 20px;    
-}
-.contact-us{
-    margin: 0px;
-
-.contact-content button{
-    font-size: 16px;
-    padding: 8px 16px;
-}
-.contact-content h2{
-  font-size: 30px;
-  color: #1c00b5;
-  font-weight: 600;
-}
 }
 
 .cta-button{
@@ -338,7 +325,6 @@ padding-top: 5px;
 }
 
 
-/* Checkout */
 
 
 
@@ -354,6 +340,10 @@ padding-top: 5px;
     }
 
     .container-checkout{
+      margin-top:120px;
+    }
+
+    .contact-us{
       margin-top:120px;
     }
 }
@@ -405,6 +395,7 @@ padding-top: 5px;
     margin-top:160px;
   }
 
+
 }
 .heading h3{
   color: #191D88;
@@ -412,12 +403,4 @@ padding-top: 5px;
   text-align: center;
   margin-top: 35px;
 
-}
-/*--- cart item ----*/
-.cart-page{
-  margin: 80px auto;
-}
-.table{
-  width: 100%;
-  border-collapse: collapse;
 }

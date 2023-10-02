@@ -19,7 +19,7 @@
     
         <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/styleproduct.css">
+        <link rel="stylesheet" href="css/stylecheckout.css">
     
         <!--icon-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -49,16 +49,89 @@
         </header>
         <!-- Header End -->
 
-        <!-- Product Start -->
-        <section class="container" >
+        <!-- Checkout Start -->
+        <section class="container cart-page" >
             <h1 style="text-align: center; font-size:48px;">Checkout</h1>
-            
-            
+            <table style="color: black;">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <!-- Isi Belanjaan Start -->
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="gambar/airforce1toastyblackwhite.webp" alt="">
+                            <div>
+                                <p>Air Force 1 Toasy Black White</p>
+                                <small>Price: Rp 100.000.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"  min="1"></td>
+                    <td>Rp 100.000.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="gambar/airforce1wb.webp" alt="">
+                            <div>
+                                <p>Air Force 1 White Black</p>
+                                <small>Price: Rp 100.000</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"  min="1"></td>
+                    <td>Rp 100.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="gambar/aj1royaltoe.jpeg" alt="">
+                            <div>
+                                <p>Air Jordan Royal Toe</p>
+                                <small>Price: Rp 100.000</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"  min="1"></td>
+                    <td>Rp 100.000</td>
+                </tr>
 
-        <!-- Footer Start -->
-        <footer style="position: absolute; bottom: 0;">
+                <!-- Isi Belanjann End -->
+            </table>
+            
+            <div class="total-price">
+                <table style="color: black;" >
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>Rp 100.000</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>Rp 100.000</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>Rp 100.000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" class="cta-button" >Checkout</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!-- Checkout End -->
+
+        <footer>
             <p>swish.com&trade;</p>
         </footer>
-        <!-- Footer End -->
 </body>
 </html>
