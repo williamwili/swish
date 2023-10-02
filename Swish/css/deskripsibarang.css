@@ -21,10 +21,12 @@ img{
 .img-showcase{
     display:flex;
     width: 600px;
+    margin-right: 60px;
     transition: all 0.5s ease;
 }
 .img-showcase img{
     min-width: 100%;
+
 }
 .img-select{
     display: flex;
@@ -47,8 +49,17 @@ img{
 .product-imgs{
     display:flex;
     align-items:center;
-
+    transition: all .40s;
     height:700px;
+}
+.product-imgs:hover{
+    transform: scale(1.1);
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .product-title{
@@ -58,6 +69,7 @@ img{
     position: relative;
     color: #12263a;
     margin: 1rem 0;
+    margin-top: 100px;
 }
 .product-title::after{
     content: "";
@@ -67,21 +79,6 @@ img{
     height: 4px;
     width: 80px;
     background: #12263a;
-}
-.product-link{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 0.9rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    background: #256eff;
-    color: #fff;
-    padding: 0 0.3rem;
-    transition: all 0.5s ease;
-}
-.product-link:hover{
-    opacity: 0.9;
 }
 .product-price{
     margin: 1rem 0;
@@ -100,18 +97,17 @@ img{
     font-size: 0.9rem;
     padding: 0.3rem;
     opacity: 0.8;
+    text-align: justify;
 }
 .product-detail ul{
     margin: 1rem 0;
     font-size: 0.9rem;
 }
 .product-detail ul li{
-    margin: 0;
-    list-style: none;
-    padding-left: 1.7rem;
-    margin: 0.4rem 0;
-    font-weight: 600;
+    list-style: disc;
+    font-weight: 500;
     opacity: 0.9;
+    margin-left: -20px;
 }
 .product-detail ul li span{
     font-weight: 400;
@@ -126,11 +122,12 @@ img{
 
 .product-size-button {
     background:transparent;
-    width:10rem;
+    width:7rem;
     height:3rem;
     padding: 9px 17px;
+    font-weight: 600;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
@@ -144,10 +141,6 @@ img{
     background-color: #474cda;
 transform: scale(1.1);
 }
-
-
-
-
 .product-buy {
     display:grid;
     grid-template-columns: repeat(3,0fr);

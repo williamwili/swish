@@ -60,6 +60,10 @@ nav-icon{
     right: 0;
   }
 
+  .nav-icon a:hover {
+    text-decoration: underline;
+  }
+
 section{
     padding: 5% 10%;
     animation: fadeInUp 2s ease;
@@ -117,6 +121,30 @@ section{
     height: auto;
     transition: all .40s;
   }
+
+  .row3{
+    position: relative;
+    transition: all .40s;
+    margin: 10px;
+  }
+
+  .row3 img{
+    width: 22%;
+    height: auto;
+    transition: all .40s;
+  }
+
+  .row3 img:hover{
+    transform: scale(1.1);
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+
+
   .row img:hover{
     transform: scale(1.1);
     background-size: cover;

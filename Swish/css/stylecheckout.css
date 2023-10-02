@@ -6,6 +6,30 @@
   .cart-info {
     display:flex;
     flex-wrap:wrap;
+    margin-top: 40px;
+  }
+
+  .cart-info img{
+    transition: all .40s;
+  }
+
+  .cart-info img:hover{
+    transform: scale(1.1);
+    background-size: cover;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+
+
+  .cart-description{
+    margin-left: 30px;
+  }
+
+  .cart-description p{
+    font-weight: 500;
   }
   
   table{
@@ -42,7 +66,10 @@
     margin-right:10px;
   }
   
-  
+  .title-text th{
+    font-weight: 500;
+    font-size: 20px;
+  }
   
   .total-price {
     display: flex;
@@ -53,6 +80,7 @@
     border-top: 3px solid;
     width: 100%;
     max-width:420px;
+
   }
   
   td:last-child {

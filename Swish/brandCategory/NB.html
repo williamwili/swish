@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Judul-->
+        <title>swish</title>
+    
+        <!--Favicon-->
+        <link rel="shortcut icon" href="../gambar/Favicon.png">
+    
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;900&display=swap" rel="stylesheet">
+    
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleproduct.css">
+    
+        <!--icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+        <!-- Header Start -->
+        <header>
+            <div class="logo">
+                <a href="Home.html"><img src="../gambar/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="nav-menu">
+                    <a href="../Home.html">Home</a>
+                    <a href="../Product.html">Product</a>
+                    <a href="../about.html">About</a>
+                    <a href="../Contact.html">Contact Us</a>
+                    <a href="../Checkout.html" class="nav-icon"><i class='bx bx-cart'></i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Product Start -->
+        <section class="container" >
+            <h1 style="text-align: center; font-size:48px;">Products</h1>
+            <hr style="width: 100%;">
+
+            <!-- SiderBar Start-->
+                <div class="product-container" >
+                    <div class="Sidebar-container">
+                        <div class="custom-select">
+                            <h2>Sort</h2>
+                            <select class="minimal">
+                                <option>Select</option>
+                                <option>Alpabetically, A-Z </option>
+                                <option>Alpabetically, Z-A </option>
+                                <option>Price, Low-High </option>
+                                <option>Price, High-Low </option>
+                                <option>Date, Old-New </option>
+                                <option>Date, New-Old </option>
+                              </select>
+                        </div>
+
+                        <!-- Sidebar Checkbox Start -->
+                        <div>
+                            <h2>Materials</h2>        
+                            <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                <span style="width: 100px;">Suede</span>
+                                <input type="checkbox" >
+                            </label>
+                            <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                <span style="width: 100px;">Canvas</span>
+                                <input type="checkbox" style="justify-self: flex-end;">
+                            </label>   
+                            <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                <span style="width: 100px;">Rubber</span>
+                                <input type="checkbox" style="justify-self: flex-end;">
+                            </label>   
+                            <h2>Brands</h2>
+                                <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                    <span style="width: 100px;">Adidas</span>
+                                    <input type="checkbox" style="justify-self: flex-end;">
+                                </label>
+                                <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                    <span style="width: 100px;">Puma</span>
+                                    <input type="checkbox" style="justify-self: flex-end;">
+                                </label>
+                                <label for="" style="display: flex; font-size: large; gap: 1rem;width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                    <span style="width: 100px;">Nike</span>
+                                    <input type="checkbox" style="justify-self: flex-end;">
+                                </label>
+                                <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                    <span style="width: 100px;">Reebok</span>
+                                    <input type="checkbox" style="justify-self: flex-end;">
+                                </label>
+                                <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                    <span style="width: 100px;">New Balance</span>
+                                    <input type="checkbox" style="justify-self: flex-end;"checked onclick="location.href='../Product.html';">
+                                </label>
+                            <h2>Gender</h2>
+                            <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                <span style="width: 100px;">Male</span>
+                                <input type="checkbox" style="justify-self: flex-end;">
+                            </label>
+                            <label for="" style="display: flex; font-size: large; gap: 1rem; width: 200px; justify-content: flex-start; align-items: center; border-radius: 5px;">
+                                <span style="width: 100px;">Female</span>
+                                <input type="checkbox" style="justify-self: flex-end;">
+                            </label>
+                        </div>     
+                        <!-- Sidebar Checkbox End -->
+                    </div>
+                   
+                    <!-- Gambar Produk -->
+                    <div>
+                        <!--Row 1-->
+                        <div class="product">
+                            <div class="row">
+                                <a href="../DetailProduk/NB-WG.html"><img src="../gambar/nb550whitegrey.webp" alt="" style="width: 22%; height: auto;"></a>
+                                    <div class="product-name">
+                                        <h4>New Balance 550 White Grey<h4>
+                                        <h5>Rp 2.500.000</h5>
+                                    </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            <!-- SideBar End -->
+        </section>
+        <!-- Product End-->
+
+        <!-- Footer Start -->
+        <footer>
+            <p>swish.com&trade;</p>
+        </footer>
+        <!-- Footer End -->
+</body>
+</html>
