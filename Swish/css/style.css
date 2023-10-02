@@ -223,7 +223,6 @@ section{
   }
   
 
-  /* Checkbox */
 
 
 
@@ -339,6 +338,10 @@ padding-top: 5px;
 }
 
 
+/* Checkout */
+
+
+
 /*responsive CSS */
 @media(max-width:890px){
     header{
@@ -350,7 +353,9 @@ padding-top: 5px;
       margin-top:120px;
     }
 
-
+    .container-checkout{
+      margin-top:120px;
+    }
 }
 @media(max-width:630px){
     .main-text h1{
@@ -362,6 +367,7 @@ padding-top: 5px;
       padding: 10px 20px;
       transition: .4s;
     }
+
 
 
 }
@@ -394,6 +400,11 @@ padding-top: 5px;
       margin-top: 30px;
 
   }
+
+  .container-checkout{
+    margin-top:160px;
+  }
+
 }
 .heading h3{
   color: #191D88;

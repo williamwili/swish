@@ -7,6 +7,7 @@
 .about{
     background-color: #f8f8f8;
     overflow: hidden;
+    margin-top:20px;
 }
 .heading h1{
     color: #191D88;
@@ -68,15 +69,18 @@ img{
     border-radius: 10px;
 }
 
+@media(max-width:890px){
+    .about{
+        margin-top:120px;
+    }
+}
+
 
 @media screen and (max-width: 768px){
     .heading h1{
         font-size: 45px;
         margin-top: 30px;
 
-    }
-    .about{
-        margin: 0px;
     }
     .container{
         width:100%;
